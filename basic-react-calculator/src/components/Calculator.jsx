@@ -6,14 +6,14 @@ export default function Calculator() {
 
 
     function add(e) {
-        
+
         let value = e.currentTarget.textContent;
         if (value == 'x') {
             value = '*';
         } else if (value == '÷') {
             value = '/';
         }
-        setData(data + value);
+        setData((data) => data + value);
 
     }
 
