@@ -7,7 +7,7 @@ export default function TodoList() {
 
     const [todos, setTodos] = useState([]);
 
-    const buttonHandler = (id) => {
+    const clickHandler = (id) => {
         setTodos(todos => todos.map(todo => todo._id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo));
     }
 
@@ -27,7 +27,7 @@ export default function TodoList() {
                         key={todo._id}
                         text={todo.text}
                         isCompleted={todo.isCompleted}
-                        onButtonClick={buttonHandler}
+                        onButtonClick={clickHandler}
                         _id={todo._id}
                     />)}
             </div>
