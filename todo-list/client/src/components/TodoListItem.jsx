@@ -11,7 +11,7 @@ export default function TodoListItem({
             <div className={styles.task && isCompleted ? `${styles.complete} ` : `${styles.incomplete}`} >
                 <div>{text}</div>
                 <div>{isCompleted ? 'Complete' : 'Incomplete'}</div>
-                <button className={styles.button} onClick={() => { onButtonClick(_id) }}>Change Status</button>
+                <button className={styles.button} onClick={() => onButtonClick(_id) }>Change Status</button>
             </div >
         </>
     )
