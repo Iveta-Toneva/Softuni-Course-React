@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #87ceeb; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #ff6347; 
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e5533d; 
+  }
+  
+  .sky {
+    background-color: #87ceeb;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+  }
+  
+
+  
+  .duck {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: hideShow 0.4s linear infinite;
+  }
+  
+  .duck img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  
+  @keyframes hideShow {
+    0% {
+      opacity: 1; 
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
